@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="author" content="Noomen Krichen">
+  <title>Pressure Units Converter</title>
+  <script src="conversion.js"></script>
+</head>
+
+<body>
+    <h1>Pressure Unit Converter</h1>
+    <form name="conversion" id="conversion">
+        <div id="input">
+            <input type="number" name="initP" id="initP">
+            <select name="initUnit" id="initUnit">
+                <option value="psi">psi</option>
+                <option value="bar">bar</option>
+                <option value="atm">atm</option>
+                <option value="Pa">Pa</option>
+                <option value="mmHg">torr (mmHg)</option>
+            </select>
+        </div>
+        <div>
+            <input type="button" value="Convert" onClick="convertP()">
+        </div>
+        <div id="output">
+            <input type="number" name="outP" id="outP">
+            
+            <select name="outUnit" id="outUnit">
+                <option value="psi">psi</option>
+                <option value="bar">bar</option>
+                <option value="atm">atm</option>
+                <option value="Pa">Pa</option>
+                <option value="mmHg">torr (mmHg)</option>
+            </select>
+        </div>
+    </form>
+</body>
+</html>
