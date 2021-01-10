@@ -103,10 +103,10 @@ function convertP()
         document.conversion.outP.value = Math.round(10000*toATM(Number.parseFloat(document.conversion.initP.value),document.conversion.initUnit.value))/10000;
     }
     if(document.conversion.outUnit.value==="Pa"){
-        document.conversion.outP.value = Math.round(10000*toPA(Number.parseFloat(document.conversion.initP.value),document.conversion.initUnit.value))10000;
+        document.conversion.outP.value = Math.round(10000*toPA(Number.parseFloat(document.conversion.initP.value),document.conversion.initUnit.value))/10000;
     }
     if(document.conversion.outUnit.value==="mmHg"){
-        document.conversion.outP.value = Math.round(10000*toMMHG(Number.parseFloat(document.conversion.initP.value),document.conversion.initUnit.value))10000;
+        document.conversion.outP.value = Math.round(10000*toMMHG(Number.parseFloat(document.conversion.initP.value),document.conversion.initUnit.value))/10000;
     }
     document.getElementById("output").style.backgroundColor = "lightgreen";
 }
