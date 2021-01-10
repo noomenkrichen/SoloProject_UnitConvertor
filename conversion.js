@@ -94,19 +94,19 @@ function toMMHG(p,unit){
 function convertP()
 {
     if(document.conversion.outUnit.value==="psi"){
-        document.conversion.outP.value = toPSI(Number.parseFloat(document.conversion.initP.value),document.conversion.initUnit.value);
+        document.conversion.outP.value = Math.round(10000*toPSI(Number.parseFloat(document.conversion.initP.value),document.conversion.initUnit.value))/10000;
     }
     if(document.conversion.outUnit.value==="bar"){
-        document.conversion.outP.value = toBAR(Number.parseFloat(document.conversion.initP.value),document.conversion.initUnit.value);
+        document.conversion.outP.value = Math.round(10000*toBAR(Number.parseFloat(document.conversion.initP.value),document.conversion.initUnit.value))/10000;
     }
     if(document.conversion.outUnit.value==="atm"){
-        document.conversion.outP.value = toATM(Number.parseFloat(document.conversion.initP.value),document.conversion.initUnit.value);
+        document.conversion.outP.value = Math.round(10000*toATM(Number.parseFloat(document.conversion.initP.value),document.conversion.initUnit.value))/10000;
     }
     if(document.conversion.outUnit.value==="Pa"){
-        document.conversion.outP.value = toPA(Number.parseFloat(document.conversion.initP.value),document.conversion.initUnit.value);
+        document.conversion.outP.value = Math.round(10000*toPA(Number.parseFloat(document.conversion.initP.value),document.conversion.initUnit.value))10000;
     }
     if(document.conversion.outUnit.value==="mmHg"){
-        document.conversion.outP.value = toMMHG(Number.parseFloat(document.conversion.initP.value),document.conversion.initUnit.value);
+        document.conversion.outP.value = Math.round(10000*toMMHG(Number.parseFloat(document.conversion.initP.value),document.conversion.initUnit.value))10000;
     }
     document.getElementById("output").style.backgroundColor = "lightgreen";
 }
