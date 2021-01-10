@@ -1,0 +1,48 @@
+h1 {
+    display: block;
+    font-size: 5em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 10;
+    margin-right: 10;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  #input {
+    display: block;
+    font-size: 5em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 10;
+    margin-right: 10;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  #output {
+    display: block;
+    font-size: 5em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 10;
+    margin-right: 10;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  #btn {
+    display: block;
+    font-size: 3em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 10;
+    margin-right: 10;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .big_btn {
+    font-size: 1em;
+    font-weight: bold;
+  }
