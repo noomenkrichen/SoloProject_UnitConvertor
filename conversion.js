@@ -93,6 +93,8 @@ function toMMHG(p,unit){
 
 function convertP()
 {
+	if(document.conversion.initP.value===""){alert("Please enter a number to convert")}
+	else{
     if(document.conversion.outUnit.value==="psi"){
         document.conversion.outP.value = Math.round(10000*toPSI(Number.parseFloat(document.conversion.initP.value),document.conversion.initUnit.value))/10000;
     }
@@ -108,5 +110,15 @@ function convertP()
     if(document.conversion.outUnit.value==="mmHg"){
         document.conversion.outP.value = Math.round(10000*toMMHG(Number.parseFloat(document.conversion.initP.value),document.conversion.initUnit.value))/10000;
     }
-    document.getElementById("output").style.backgroundColor = "lightgreen";
+	document.getElementById("output").style.backgroundColor = "lightgreen";	
+	}
+	$("h1").fadeOut("slow").fadeIn("slow");
+
 }
+/*
+$("button").click(function(){
+	$("h1").fadeToggle();
+	//$("#btn").fadeToggle("slow");
+	//$("#btn").fadeToggle(3000);
+  });
+  */
